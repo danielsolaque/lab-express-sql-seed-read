@@ -4,6 +4,8 @@
   "description": "Starter code for student lab",
   "main": "server.js",
   "scripts": {
+    "dev": "nodemon ./app.js",
+    "start": "node ./app.js",
     "db:init": "psql -U postgres -f db/schema.sql",
     "db:seed": "psql -U postgres -f db/seed.sql",
     "test": "jest --runInBand"
@@ -19,7 +21,11 @@
   },
   "homepage": "https://github.com/joinpursuit/tuner-full-stack-app#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "jest": "^27.4.7",
+    "pg": "^8.9.0",
     "supertest": "^6.2.0"
   }
 }
